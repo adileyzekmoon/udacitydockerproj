@@ -12,8 +12,8 @@ setup:
 
 install:
 	# This should be run from inside a virtualenv
-	py -m pip install --upgrade pip &&\
-		py -m pip install -r requirements.txt
+	python -m pip install --upgrade pip &&\
+		python -m pip install -r requirements.txt
 
 test:
 	# Additional, optional, tests could go here
