@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/adileyzekmoon/udacitydockerproj/tree/main.svg?style=svg)](https://circleci.com/gh/adileyzekmoon/udacitydockerproj/tree/main)
 
 ## Project Overview
 
@@ -27,6 +27,10 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
+    Required depenencies:
+    1. hadolint
+    2. pylint
+
 
 ### Running `app.py`
 
@@ -38,5 +42,20 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
+    Required depenencies:
+    1. minikube
+    2. kubectl 
 * Create Flask app in Container
 * Run via kubectl
+
+### Relevant enhanced files for project
+
+* output_txt_files
+    1. docker_out.txt: console output for on Docker when app.py is run on Docker
+    2. kubernetes.txt: console output for on Kubernetes cluster when app.py is run on Kubernetes
+* Dockerfile: configuration file for running docker setup and commands
+* Makefile: configuration file for make commands
+* requirements.txt: required python dependencies, includes pylint for Makefile
+* run_docker.sh: Shell script to run Flask image on Docker
+* run_kubernetes.sh: Shell script to run Flask image on Kubernetes cluster
+* upload_docker.sh: Shell script to upload Docker image to remote repository 
